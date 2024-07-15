@@ -1,0 +1,94 @@
+*, body, nav {
+    background-color: white;
+    font-family: "Noto Sans Mono", monospace;
+}
+/* NAVBAR */
+.navbar-nav {
+    display: flex;
+    background-color: white;
+    font-family: "Noto Sans Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 200PX;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+}
+
+hr {
+border-color: #025ca6;
+border-width: 2px;
+width: 85%;
+margin: 0 auto;
+}
+
+p {
+    font-size: 12px;
+    text-align: center;
+}
+#msn{
+    width: 8%;
+    padding-bottom: 10px;
+}
+#fiesta, #boda, #gente, #calle, #hardcore, #about, #inicio, #azar, #fotos{
+    width: 30px;
+}
+
+.nav-link, .dropdown-item {
+    color: #025ca6;
+}
+.nav-link {
+    display: inline;
+}
+
+.navbar-brand {
+    font-family: franklin-gothic-atf, sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 35px ;
+    font-style: italic;
+    color: #025ca6;
+    width: 50%;
+
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar-toggler {
+    padding: 0.25rem 0.5rem; 
+    width: 60px; 
+    height: 60px; 
+    border: none; 
+    background-color: transparent; 
+    color: #025ca6;
+}
+
+#plus {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain;
+    color: solid #025ca6;
+}
+
+/* BODY */
+/* Estilo normal de la imagen */
+#tqm {
+    /* Ajusta el tamaño si es necesario */
+    width: 200px;
+    height: auto; /* Para mantener la proporción */
+    transition: transform 0.3s ease;
+}
+
+/* Estilo al pasar el cursor (hover) */
+#tqm:hover {
+    background-color: rgba(0,0,0,0.4);
+    content: url('https://64.media.tumblr.com/c8fa87a4c65c6e1c613cf04db94a6629/ee38c6cbefe81514-91/s2048x3072/76212fbf0cd80e60f785efc6172d3874a5a1217c.jpg'); /* Cambia 'ruta/a/imagen/hover.png' por la ruta de tu imagen hover */
+    transform: scale(1.5); /* Ejemplo de efecto adicional, escala la imagen al 110% */
+}
+
+
+.conteiner {
+    align-items: end;
+
+}

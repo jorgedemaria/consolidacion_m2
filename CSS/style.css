@@ -1,4 +1,4 @@
-* *,
+*,
 body,
 nav {
     background-color: white;
@@ -6,6 +6,8 @@ nav {
 }
 
 /* NAVBAR */
+
+
 .navbar-nav {
     display: flex;
     background-color: white;
@@ -74,8 +76,8 @@ p {
 }
 
 #plus {
-    width: 150%;
-    height: 150%;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     color: solid #025ca6;
 
@@ -90,29 +92,42 @@ p {
     size: 50px;
 }
 
+.d-flex.justify-content-between {
+    flex-grow: 1;
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-start;
+}
 /* BODY */
 
 /*ESPACIO EN BLANCO*/
 #espacio-en-blanco {
-    height: 800px;
+    height: 400px;
 }
 
 /* Estilo normal de la imagen */
 #tqm {
-    /* Ajusta el tamaño si es necesario */
     width: 200px;
     height: auto;
-    /* Para mantener la proporción */
     transition: transform 0.3s ease;
+    position: absolute; bottom: 0; right: 0; 
+    margin-right: 100px;
+
 }
 
 /* Estilo al pasar el cursor (hover) */
 #tqm:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    content: url('https://64.media.tumblr.com/c8fa87a4c65c6e1c613cf04db94a6629/ee38c6cbefe81514-91/s2048x3072/76212fbf0cd80e60f785efc6172d3874a5a1217c.jpg');
-    /* Cambia 'ruta/a/imagen/hover.png' por la ruta de tu imagen hover */
-    transform: scale(2);
-    /* Ejemplo de efecto adicional, escala la imagen al 110% */
+    content: url('https://64.media.tumblr.com/91f713d5a66fe1aa5e8d236e6c0c97a9/e4f1f7725a507e7c-19/s1280x1920/8f760f8b30bfc4d3a56b9a647740460fb6a5ae91.jpg');
+    transform: scale(3);
 }
 
 
@@ -185,8 +200,8 @@ p {
 
 .btn_cerrar {
     position: absolute;
-    top: -15px;
-    right: -15px;
+    top: -5px;
+    right: -5px;
     font-size: 35px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -270,6 +285,11 @@ p {
 
 /* CONTACTO*/
 
+.about{
+    padding-left: 2%;
+    width: 45%;
+    text-align: justify;
+}
 .contact {
     min-height: 100vh;
     padding: 50px;
@@ -288,6 +308,13 @@ p {
     font-weight: 550;
 }
 
+.info {
+    text-decoration: underline;
+}
+
+.info a {
+    color: black;
+}
 .contact-wrapper {
     justify-content: space-between;
     margin-top: 10px;
@@ -356,26 +383,34 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
     .navbar-brand {
-        font-size: 1.5rem; 
-        display: block;
-        }
-    .navbar{
+        font-size: 1.5rem;
+    }
+    .navbar {
         flex-wrap: nowrap;
     }
-    .navbar-toggler{
+    .navbar-toggler {
         width: 50px;
         height: 50px;
         padding: 0;
     }
-    .container-fluid{
-        display: block !important;
+ 
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .contact-wrapper {
-        flex-direction: column; 
+        flex-direction: column;
     }
-
     .contact-form,
     .contact-info {
-        width: 100%; /
+        width: 100%;
+    }
+
+
+
+
+   .nav-item {
+        width: 100%;
     }
 }

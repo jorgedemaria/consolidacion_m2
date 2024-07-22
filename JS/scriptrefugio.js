@@ -61,6 +61,16 @@ btn_cerrar.addEventListener("click", function(){
     overlay.style.visibility = "hidden"
 })
 
+function cerrarOverlay() {
+    overlay.style.visibility = "hidden"
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        cerrarOverlay()
+    }
+})
+
 Array.from(galeria_imagenes).forEach(img => {
     img.addEventListener("click", event => {
         const imagen_seleccionada = +event.target.dataset.imgMostrar

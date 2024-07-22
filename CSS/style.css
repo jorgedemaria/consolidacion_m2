@@ -108,7 +108,7 @@ p {
     height: auto;
     transition: transform 0.3s ease;
     position: absolute; bottom: 0; right: 0; 
-    margin-right: 100px;
+    margin-right: 150px;
 
 }
 
@@ -116,7 +116,7 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
     content: url('https://64.media.tumblr.com/91f713d5a66fe1aa5e8d236e6c0c97a9/e4f1f7725a507e7c-19/s1280x1920/8f760f8b30bfc4d3a56b9a647740460fb6a5ae91.jpg');
     transform: scale(3);
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 

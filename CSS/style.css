@@ -3,28 +3,27 @@ body,
 nav {
     background-color: white;
     font-family: "Noto Sans Mono", monospace;
+    
 }
 
 /* NAVBAR */
 
-
+.navbar {
+    padding: 30px;
+}
 .navbar-nav {
     display: flex;
     background-color: white;
     font-family: "Noto Sans Mono", monospace;
-   
 }
 
 .navbar-brand {
     font-family: franklin-gothic-atf, sans-serif;
-    font-style: normal;
     font-weight: 1000;
     font-size: 2rem;
     font-style: italic;
     color: #025ca6;
-
 }
-
 
 hr {
     border-color: #025ca6;
@@ -71,25 +70,15 @@ p {
     height: 60px;
     border: none;
     background-color: transparent;
-    color: transparent
-
+    color: transparent;
+    align-self: flex-end;
 }
 
-#plus {
-    width: 40px;
-    height: 40px;
+#plus, #remove {
+    width: 50px;
+    height: 50px;
     object-fit: contain;
-    color: solid #025ca6;
-
-}
-
-#remove {
-    display: none;
-    width: 150%;
-    height: 150%;
-    object-fit: contain;
-    color: solid #025ca6;
-    size: 50px;
+    color: #025ca6;
 }
 
 .d-flex.justify-content-between {
@@ -104,7 +93,7 @@ p {
 
 .container-fluid {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 /* BODY */
 
@@ -113,7 +102,7 @@ p {
     height: 400px;
 }
 
-/* Estilo normal de la imagen */
+/* TQM */
 #tqm {
     width: 200px;
     height: auto;
@@ -123,11 +112,11 @@ p {
 
 }
 
-/* Estilo al pasar el cursor (hover) */
 #tqm:hover {
     background-color: rgba(0, 0, 0, 0.4);
     content: url('https://64.media.tumblr.com/91f713d5a66fe1aa5e8d236e6c0c97a9/e4f1f7725a507e7c-19/s1280x1920/8f760f8b30bfc4d3a56b9a647740460fb6a5ae91.jpg');
     transform: scale(3);
+    margin-right: 100px;
 }
 
 
@@ -179,7 +168,7 @@ p {
     justify-content: center;
     transition: all .7s ease;
     visibility: hidden;
-    opacity: 0%;
+    opacity: 0;
 }
 
 .overlay .slideshow {
@@ -290,30 +279,50 @@ p {
     width: 45%;
     text-align: justify;
 }
+
+.bio {
+    background-color: #025ca6;
+    color: white;
+    padding: 20px;
+}
+
+strong {
+    background-color: transparent
+}
+
 .contact {
     min-height: 100vh;
     padding: 50px;
     text-align: justify;
 }
 
-.conteiner-contact {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .container-contact h3 {
     display: inline-block;
     color: #025ca6;
     font-family: "franklin-gothic-atf", sans-serif;
-    font-weight: 550;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
 }
 
-.info {
+.info  {
     text-decoration: underline;
 }
 
+.info a,
+.info .text {
+    display: inline-block; 
+    vertical-align: middle;
+}
+
 .info a {
-    color: black;
+    color: black; 
+    font-size: 14px; 
+    margin-right: 10px; 
+}
+
+.info .text {
+    font-size: 13px;
 }
 .contact-wrapper {
     justify-content: space-between;
@@ -328,11 +337,7 @@ p {
     width: 40%;
 }
 
-.contact-info h6 {
-    margin-top: 20px;
-}
-
-.contact-info p {
+.contact-info a {
     margin-bottom: 10px;
 }
 
@@ -343,6 +348,7 @@ p {
 .form-group input,
 .form-group textarea {
     border: none;
+    font-size: 13px;
     background-color: #ccd8f0;
     width: 100%;
     padding: 10px;
@@ -356,18 +362,21 @@ button[type="submit"] {
     color: #ccd8f0;
     border: none;
     transition: opacity 0.3s ease; 
+    font-size: 14px;
 }
 
 button[type="submit"]:hover {
     opacity: 0.4; 
 }
 
-.contact-info h4 {
+.contact-info h3 {
     display: inline-block;
     color: #025ca6;
     font-family: "franklin-gothic-atf", sans-serif;
     font-weight: 500;
     justify-content: left;
+    padding-top: 90%;
+    font-size: 30px;
 }
 
 .contact-info { 
@@ -375,29 +384,48 @@ button[type="submit"]:hover {
    
 }
 .contact-info a {
-    margin: 0;
-    font-size: 15px;
-    line-height: 2;
-    text-decoration: none;
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
     .navbar {
-        flex-wrap: nowrap;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+    .navbar-brand-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
     .navbar-toggler {
         width: 50px;
         height: 50px;
         padding: 0;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
     }
- 
+
     .navbar-collapse {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        width: 100%;
     }
     .contact-wrapper {
         flex-direction: column;
@@ -408,9 +436,27 @@ button[type="submit"]:hover {
     }
 
 
-
-
-   .nav-item {
-        width: 100%;
+    .about {
+        width: 85%;
     }
+    #espacio-en-blanco {
+        height: 200px;
+    }
+
+    #tqm {
+        width: 120px;
+        height: auto;
+        transition: transform 0.3s ease;
+        position: absolute; bottom: 0; right: 0; 
+        margin-right: 70px;
+    
+    }
+    
+    #tqm:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        content: url('https://64.media.tumblr.com/91f713d5a66fe1aa5e8d236e6c0c97a9/e4f1f7725a507e7c-19/s1280x1920/8f760f8b30bfc4d3a56b9a647740460fb6a5ae91.jpg');
+        transform: scale(2);
+        margin-right: 100px;
+    }
+
 }

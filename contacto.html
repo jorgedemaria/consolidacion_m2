@@ -18,38 +18,31 @@
 <body>
     <nav class="navbar navbar-light bg-body-white mx-3">
         <a class="navbar-brand" href="index.html">jdm<img src="CSS/img/logocopy.png" alt="Mi Logo" id="msn"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="CSS/img/plus2.svg" alt="Mi Logo" id="plus">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="CSS/img/plus2.svg" alt="plus" id="plus">
+            <img src="CSS/img/remove.svg"alt="remove" id="remove" style="display: none;">
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"><img src="CSS/img/home.png"
-                            alt="home" id="inicio"> inicio</a>
+                    <a class="nav-link active" aria-current="page" href="index.html"><img src="CSS/img/home.png" alt="home" id="inicio"> inicio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false"><img src="CSS/img/fotos.png" alt="fotos" id="fotos"> proyectos
-                        fotográficos</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="CSS/img/fotos.png" alt="fotos" id="fotos"> proyectos fotográficos</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="hardcore.html"><img src="CSS/img/hardcore.webp"
-                                    alt="hardcore" id="hardcore"> "catarsis" (2012-2014)</a></li>
-                        <li><a class="dropdown-item" href="refugio.html"><img src="CSS/img/calle.png" alt="calle"
-                                    id="calle"> "refugio" (2015)</a></li>
-                        <li><a class="dropdown-item" href="techno.html"><img src="CSS/img/fiesta.png" alt="techno"
-                                    id="fiesta"> "trance" (2017-2020)</a></li>
-                        <li><a class="dropdown-item" href="bodas.html"><img src="CSS/img/beso.png" alt="boda" id="boda">
-                                "bodas"</a></li>
+                        <li><a class="dropdown-item" href="catarsis.html"><img src="CSS/img/hardcore.webp" alt="hardcore" id="hardcore"> "catarsis" (2012-2014)</a></li>
+                        <li><a class="dropdown-item" href="refugio.html"><img src="CSS/img/calle.png" alt="calle" id="calle"> "refugio" (2015)</a></li>
+                        <li><a class="dropdown-item" href="trance.html"><img src="CSS/img/fiesta.png" alt="techno" id="fiesta"> "trance" (2017-2020)</a></li>
+                        <li><a class="dropdown-item" href="bodas.html"><img src="CSS/img/beso.png" alt="boda" id="boda"> "bodas"</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html"><img src="CSS/img/azar.png" alt="azar" id="azar">
-                        contacto</a>
+                    <a class="nav-link" href="contacto.html"><img src="CSS/img/azar.png" alt="azar" id="azar"> contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
+    
 
     <section class="contact">
         <div class="container-contact">
@@ -71,12 +64,12 @@
                 </div>
                 <div class="contact-info">
                     <br>
-                    <h4>información de contacto</h4>
+                    <h3>info de contacto</h3>
                     <div class="info">
-                        <div><a href="tel:+56990815973">+56990815973</a></div>
-                        <div><a href="mailto:jorgedemaria@pm.me">jorgedemaria@pm.me</a></div>
-                        <div><a href="https://www.instagram.com/jorgedemaria63" target="_blank">instagram.com:
-                                jorgedemaria63</a></div>
+                        <br>
+                        <div><div class="text">llama:   </div><a href="tel:+56990815973"> +56990815973</a></div>
+                        <div><div class="text">escribe:  </div><a href="mailto:jorgedemaria@pm.me"> jorgedemaria@pm.me</a></div>
+                        <div><div class="text">visita:  </div><a href="https://www.instagram.com/jorgedemaria63" target="_blank"> instagram.com/jorgedemaria63</a></div>
                     </div>
                 </div>
             </div>
@@ -86,6 +79,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="JS/scriptcontacto.js"></script>
+
 </body>
 
 </html>
